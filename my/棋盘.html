@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 800px;
+            height: 800px;
+            border: 5px solid #000;
+            margin: 0 auto;
+           
+        }
+        .container > div{
+            width: 100px;
+            height: 100px;
+            background: #ffd460;
+            float: left;
+        }
+        .active{
+            background: #ea5455;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+        <div class="active"></div>
+    </div>
+</body>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+$(function(){
+    const chessBox = $(".container") 
+    //console.log(chessBox.width()) 
+})
+</script>
+</html>
